@@ -54,6 +54,7 @@ public class GradeCalculator {
         }
       }
     }
+    keyboard.close();
   }
 
   public static double calculatoraverage(ArrayList<Double> grades) {
