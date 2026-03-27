@@ -22,21 +22,22 @@ public class NameFinder {
 
       switch (option) {
         case 1:
+          System.out.println("\nEscribe el nombre del estudiante a buscar");
+          String nameTosearch = keyboard.nextLine();
+          System.out.println("buscando al estudaiante...");
 
+          if (students.contains(nameTosearch)) {
+            System.out.println("student found");
+          } else {
+            System.out.println("student not found");
+          }
           break;
 
-        default:
+        case 2:
+          System.out.println("Estamos saliendo... Adios!");
           break;
       }
 
-      System.out.println("\nEscribe el nombre del estudiante a buscar");
-      String nameTosearch = keyboard.nextLine();
-
-      if (students.contains(nameTosearch)) {
-        System.out.println("student found");
-      } else {
-        System.out.println("student not found");
-      }
     }
     keyboard.close();
   }
